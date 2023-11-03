@@ -1,0 +1,36 @@
+.mainDiv {
+  padding-top: 5px;
+  padding-left: 5px;
+  color: black;
+  max-width: 700px;
+}
+.userPhoto {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 20%;
+  border: 5px solid purple;
+}
+.divPhoto {
+  padding-bottom: 20px;
+}
+.btn_following {
+  border: 3px solid purple;
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 16px;
+}
+.btn_following:hover {
+  background-color: purple;
+}
+.selectedPage {
+  font-weight: bold;
+  color: purple;
+  font-size: 15px;
+}
+.Page {
+  padding: 5px;
+}
+.isActive {
+  font-weight: bold;
+  color: purple;
+}

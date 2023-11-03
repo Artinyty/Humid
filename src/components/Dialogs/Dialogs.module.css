@@ -1,0 +1,56 @@
+.imgAva {
+  height: 100px;
+  width: 100px;
+}
+.dialoges {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialogesItems .s.active {
+  color: gold;
+  font-size: 14px;
+}
+
+.dialogesItems {
+  padding: 10px;
+}
+.messages {
+  padding: 10px 10px;
+}
+
+.dialoges .active {
+  border: 2px solid purple;
+  font-size: 14px;
+  padding: 5px 5px;
+  border-radius: 20%;
+}
+.textarea {
+  resize: none;
+  width: 400px;
+  height: 100px;
+  padding: 10px 10px;
+}
+.sendBtn {
+  text-align: center;
+  margin-left: 50px;
+  background-color: blue;
+  color: aqua;
+  border: 2px solid black;
+  padding: 5px 5px;
+}
+.textareaMsg {
+  resize: none;
+  width: 400px;
+  height: 100px;
+}
+
+.msgBtn {
+  text-align: center;
+  margin-left: 50px;
+  background-color: transparent;
+  color: black;
+  font-size: 14px;
+  border: 2px solid purple;
+  border-radius: 20%;
+  padding: 5px 5px;
+}

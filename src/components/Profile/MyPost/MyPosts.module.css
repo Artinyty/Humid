@@ -1,0 +1,19 @@
+.imgAva {
+  height: 200px;
+  width: 200px;
+}
+.textarea__posts {
+  resize: none;
+  width: 500px;
+  height: 100px;
+  padding: 10px 10px;
+  color: black;
+}
+.postBtn {
+  margin-top: 10px;
+  background-color: transparent;
+  border: solid 3px purple;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
