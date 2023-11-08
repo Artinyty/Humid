@@ -8,7 +8,7 @@ const mapStateProps = (state) => {
 
   }
 }
-const mapDispachToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     updateNewPost: (text) => {
       let action = updateNewPostTextActionCreator(text);
@@ -22,8 +22,6 @@ const mapDispachToProps = (dispatch) => {
 }
 
 export default compose(
-  connect(mapStateProps, mapDispachToProps)
+  connect(mapStateProps, mapDispatchToProps)
 )(MyPosts);
 
-// const MyPostsContainer = connect(mapStateProps, mapDispachToProps)(MyPosts);
-// export default MyPostsContainer; 

@@ -8,6 +8,7 @@ import authReducer from "./auth-reducer.js";
 import thunk from 'redux-thunk';
 
 
+
 let reducers = combineReducers({
   profilePage: profileReducer,
   dialogsPage: dialogsReducer,
