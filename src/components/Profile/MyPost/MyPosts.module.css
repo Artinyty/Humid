@@ -4,16 +4,15 @@
 }
 .textarea__posts {
   resize: none;
-  width: 500px;
+  width: 300px;
   height: 100px;
   padding: 10px 10px;
-  color: black;
 }
 .postBtn {
   margin-top: 10px;
   background-color: transparent;
   border: solid 3px purple;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 10px 10px;
   margin-bottom: 20px;
 }

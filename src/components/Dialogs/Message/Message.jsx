@@ -4,7 +4,7 @@ import s from './../Dialogs.module.css'
 
 
 
-const Messege = (props) => {
+const Message = (props) => {
 
   return (
     <div>
@@ -18,5 +18,5 @@ const Messege = (props) => {
 }
 
 
-export default Messege;
+export default Message;
 

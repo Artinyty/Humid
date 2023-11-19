@@ -3,14 +3,16 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 import { reduxForm, Field } from 'redux-form'
 import { required, maxLehgthCreator } from './../../utils/validation/validators';
+import { Textarea } from '../../Common/FormsControls/FormsControls.js';
 
-const msxLehgth10 = maxLehgthCreator(10);
+
+const maxLehgth10 = maxLehgthCreator(10);
 
 const AddNewPostForm = (props) => {
   return (
     <form onSubmit={props.handleSubmit}>
       <div>
-        <Field name='newPostText' component='textarea' className={s.textarea__posts} validate={[required, msxLehgth10]} />
+        <Field name='newPostText' component={Textarea} className={s.textarea__posts} validate={[required, maxLehgth10]} placeholder='Write Text' />
       </div>
       <div>
         <button className={s.postBtn}> Add post </button>
@@ -25,8 +27,6 @@ const MyPosts = (props) => {
   // let newPostElement = React.createRef();
 
   let onAddPost = (values) => {
-
-    debugger
     props.addPost(values.newPostText);
   }
 
@@ -41,9 +41,6 @@ const MyPosts = (props) => {
     </div>);
 
 }
-
-
-
 
 
 export default MyPosts;

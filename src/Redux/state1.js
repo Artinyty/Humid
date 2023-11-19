@@ -80,8 +80,8 @@ export const updateNewPostTextActionCreator = (text) => {
   return { type: UPDATE_NEW_POST_TEXT, newText: text }
 };
 
-export const sendMessegeCreator = () => ({ type: SEND_MESSAGER });
-export const updateNewMessegeBodyCreator = (body) => {
+export const sendMessageCreator = () => ({ type: SEND_MESSAGER });
+export const updateNewMessageBodyCreator = (body) => {
   return { type: APDATE_NEW_MSG_BODY, body: body }
 };
 

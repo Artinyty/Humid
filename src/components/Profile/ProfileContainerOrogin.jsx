@@ -7,6 +7,7 @@ import { setUserProfile } from '../../Redux/profile-reducer';
 import axios from "axios";
 import { connect } from "react-redux";
 
+
 class ProfileContainer extends React.Component {
   componentDidMount() {
     let userId = this.props.match.params.userId;

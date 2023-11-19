@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 const SEND_MESSAGER = 'SEND-MESSAGER';
 let initialStore = {
   dialogsData: [
@@ -16,20 +17,35 @@ let initialStore = {
   ]
 };
 
+// const dialogsReducer = (state = initialStore, action) => {
+//   switch (action.type) {
+//     case SEND_MESSAGER: {
+//       let body = action.newMsgBody;
+//       return {
+//         ...state,
+//         messages: [...state.messages, { id: 6, message: body }]
+//       };
+
+//     }
+//     default:
+//       return state;
+//   }
+// };
+// GPT поменял для регенироации уникального ключа на каждую новую смс
 const dialogsReducer = (state = initialStore, action) => {
   switch (action.type) {
     case SEND_MESSAGER: {
       let body = action.newMsgBody;
+      let newMessage = { id: uuidv4(), message: body };
       return {
         ...state,
-        messages: [...state.messages, { id: 6, message: body }]
+        messages: [...state.messages, newMessage]
       };
-
     }
     default:
       return state;
   }
 };
 
-export const sendMessegeCreator = (newMsgBody) => ({ type: SEND_MESSAGER, newMsgBody });
+export const sendMessageCreator = (newMsgBody) => ({ type: SEND_MESSAGER, newMsgBody });
 export default dialogsReducer;
