@@ -3,6 +3,7 @@ const ADD_POST = 'ADD-POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
 const SET_STATUS = 'SET_STATUS';
 
+
 let initialStore = {
   posts: [
     { id: 1, message: "Hi, I believe in you ", likeCount: 55 },

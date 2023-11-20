@@ -20,10 +20,27 @@ export const Textarea = (props) => {
 
 };
 
-export const Input = (props) => {
-  const { input, meta, child, ...restProps } = props;
-  return <FormControl {...props}>  <input {...input} {...restProps} /> </FormControl>
-};
+// export const Input = (props) => {
+//   const { input, meta, child, ...restProps } = props;
+//   return <FormControl {...props}>  <input {...input} {...restProps} /> </FormControl>
+// };
+export const Input = ({ field, form, ...props }) => {
+  const { name, value, onChange, onBlur } = field;
+  const { touched, errors } = form;
 
+  return (
+    <div>
+      <input
+        type="text"
+        name={name}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+        {...props}
+      />
+      {touched[name] && errors[name] && <div className="error">{errors[name]}</div>}
+    </div>
+  );
+};
 
 

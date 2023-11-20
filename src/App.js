@@ -17,10 +17,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/dialogs/*' element={<DialogsConteiner />} />
-        <Route path='/profile*' element={<ProfileContainer />} />
+        <Route path='/profile/*' element={<ProfileContainer />} />
         <Route path='/profile/:userId' element={<ProfileContainer />} />
-        <Route path='/users*' element={<UsersContainer />} />
-        <Route path='/login*' element={<Login />} />
+        <Route path='/users/*' element={<UsersContainer />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </div>
 

@@ -34,17 +34,18 @@ export const getAuthUserData = () => (dispatch) => {
 
 
 export const login = (email, password, rememberMe) => (dispatch) => {
-  console.log("Login action dispatched");
-
-  authAPI.login(email, password, rememberMe)
-    .then(response => {
-      if (response.data.resultCode === 0) {
-        dispatch(getAuthUserData());
-      } else {
-        let action = stopSubmit('login', { email: "Email is wrong" });
-        dispatch(action);
-      }
-    });
+  // console.log("Login action dispatched");
+  let action = stopSubmit('login', { email: "Email is wrong" });
+  dispatch(action);
+  // authAPI.login(email, password, rememberMe)
+  //   .then(response => {
+  //     if (response.data.resultCode === 0) {
+  //       dispatch(getAuthUserData());
+  //     } else {
+  //       let action = stopSubmit('login', { email: "Email is wrong" });
+  //       dispatch(action);
+  //     }
+  //   });
 }
 
 export const logout = () => (dispatch) => {
